@@ -27,12 +27,7 @@
  */
 
 #include "platform_lib_android_runtime.h"
-
-#ifdef USE_GLIB
 #include <loc_stub_android_runtime.h>
-#else
-#include <android_runtime/AndroidRuntime.h>
-#endif /* USE_GLIB */
 
 pthread_t platform_lib_abstraction_createJavaThread(const char* name, void (*start)(void *), void* arg)
 {
